@@ -1,7 +1,7 @@
 import { Product as TProduct } from "@/db";
-import Image from "next/image";
 
 export default function Product({product} : {product: TProduct} ) {
+
   return (
     <div
     className="group relative"
@@ -9,8 +9,9 @@ export default function Product({product} : {product: TProduct} ) {
 
         <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200
         lg:bg-none lg:aspect-none group-hover:opacity-75 lg:h-80
-        ">
-            <Image src={product?.imageId} alt="product image" className="h-full w-full object-cover object-center" />
+        ">  
+            
+            <img src={product?.imageId} alt="product image" className="h-full w-full object-cover object-center"  />
         </div>
         <div className="mt-4 flex justify-between">
             <div className="">
