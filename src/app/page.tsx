@@ -142,14 +142,8 @@ export default function Home() {
       _debouncedSubmit()
   }
 
-
-  console.log(filter)
-
-
   const minPrice = Math.min(filter.price.range[0], filter.price.range[1])
   const maxPrice = Math.max(filter.price.range[0], filter.price.range[1])
-
-
 
   return (
     <main className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-8s">
