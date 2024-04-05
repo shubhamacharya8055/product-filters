@@ -123,7 +123,7 @@ export default function Home() {
   }
 
   const debouncedSubmit = debounce(onSubmit , 400) 
-  const _debouncedSubmit = useCallback(debouncedSubmit , [])
+  const _debouncedSubmit = useCallback(debouncedSubmit , [debouncedSubmit])
 
   const applyArrayFilter = ({category, value}: {category: keyof Omit<typeof filter, "price" | "sort">,value: string}) => {
       const isFilterApplied = filter[category].includes(value as never)
