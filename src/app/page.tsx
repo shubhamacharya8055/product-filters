@@ -364,7 +364,7 @@ export default function Home() {
                     {products && products.length === 0 ? <EmptyState /> : products ? products?.map((product) => (
                       <Product product = {product.metadata!} />
                     )) : Array.from({length: 12} , (_ , i) => (
-                      <ProductSkeleton key={i}/>
+                      <ProductSkeleton key={i + 1}/>
                     ))}
                   </ul>
 

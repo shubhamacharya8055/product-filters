@@ -1,6 +1,6 @@
-import { Product } from "@/db";
+import { Product as TProduct } from "@/db";
 
-export default function Product({product} : {product: Product} ) {
+export default function Product({product} : {product: TProduct} ) {
   return (
     <div
     className="group relative"
