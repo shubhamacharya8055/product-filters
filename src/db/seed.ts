@@ -4,7 +4,7 @@ import * as dotenv from 'dotenv'
 dotenv.config()
 
 const getRandomPrice = () => {
-  const PRICES = [9.99, 19.99, 29.99, 39.99, 49.99]
+  const PRICES = [149.00,189.00,249.00,299.00,369.00,499.00,699.00,799.00,999.00]
   return PRICES[Math.floor(Math.random() * PRICES.length)]
 }
 

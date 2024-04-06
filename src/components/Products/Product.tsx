@@ -21,7 +21,7 @@ export default function Product({product} : {product: TProduct} ) {
                 </p>
             </div>
 
-            <p className="text-sm font-medium text-gray-900">{product.price}</p>
+            <p className="text-sm font-medium text-gray-900">{product.price} ₹</p>
 
         </div>
 

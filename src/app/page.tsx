@@ -66,21 +66,17 @@ const PRICE_FILTERS = {
   id: "price" , 
   name: "Price",
   options: [{
-    value: [0 , 100] , 
+    value: [0 , 1000] , 
     label: "Any Price"
   }, 
   {
-    value: [0, 20],
-    label: "Under 20$"
+    value: [0, 200],
+    label: "Under 300 ₹"
   },
   {
-    value: [0, 40],
-    label: "Under 40$"
-  },
-  {
-    value: [0, 60],
-    label: "Under 60$"
-  },
+    value: [0, 500],
+    label: "Under 500 ₹"
+  }
 
   // custom options defined in jsx
 
@@ -88,7 +84,7 @@ const PRICE_FILTERS = {
 } as const
 
 
-const DEFAULT_CUSTOM_PRICE = [0, 100] as [number , number]
+const DEFAULT_CUSTOM_PRICE = [0, 1000] as [number , number]
 
 
 export default function Home() {
@@ -308,7 +304,7 @@ export default function Home() {
                                   ...prev , 
                                   price: {
                                     custom: true , 
-                                    range: [0,100]
+                                    range: [0,1000]
                                   }
                                 }))
 

@@ -4,8 +4,8 @@ import { NextRequest } from "next/server"
 
 
 
-const AVG_SORT_PRICE = 25;
-const MAX_SORT_PRICE = 50;
+const AVG_SORT_PRICE = 300;
+const MAX_SORT_PRICE = 1000;
 
 class Filter {
     private filters: Map<string, string[]> = new Map();
