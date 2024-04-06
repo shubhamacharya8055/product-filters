@@ -35,9 +35,9 @@ const SORT_OPTIONS = [
 
 const SUB_CATEGORIES = [
   {name: "T-Shirts" , selected: true , href: "#"}, 
-  {name: "Hoodies" , selected: false , href: "#"}, 
-  {name: "SweatShirts" , selected: false , href: "#"}, 
-  {name: "Accessories" , selected: false , href: "#"}, 
+  // {name: "Hoodies" , selected: false , href: "#"}, 
+  // {name: "SweatShirts" , selected: false , href: "#"}, 
+  // {name: "Accessories" , selected: false , href: "#"}, 
 ] 
 
 const COLOR_FILTERS = {
@@ -203,7 +203,7 @@ export default function Home() {
                   {/* Filters */}
 
                   {/* Sub Categories */}
-                  <div className="hidden lg:block">
+                  <div className=" lg:block">
                     <ul className="space-y-4 border-b border-gray-200 pb-6 text-sm font-medium text-gray-900">
                       {SUB_CATEGORIES.map((category) => (
                         <li key={category.name}>
